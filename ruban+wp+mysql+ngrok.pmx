@@ -1,6 +1,6 @@
 ---
 name: Ruban+WP+MYSQL+Ngrok
-description: With installed wordpress app and ngrock
+description: ''
 keywords: ruban wordpress mysql ngrok
 type: Wordpress
 documentation: |-
@@ -37,8 +37,9 @@ images:
   category: Web Tier
   type: wordpress
   ports:
-  - host_port: 8080
-    container_port: 80
+  - host_port: '8080'
+    container_port: '80'
+    proto: ''
   links:
   - service: DB
     alias: DB_1
